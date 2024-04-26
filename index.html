@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página designer TAILWIND</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: "proxima-nova-bold";
+            src: url("fonts/proximanova-bold-webfont.woff");
+        }
+
+        @font-face {
+            font-family: "proxima-nova-semibold";
+            src: url("fonts/proximanova-semibold-webfont.woff");
+        }
+
+        @font-face {
+            font-family: "proxima-nova-light";
+            src: url("fonts/proximanova-light-webfont.woff");
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            content: ["*.{html, js}"],
+            theme: {
+                extend: {
+                    fontFamily: {
+                        "proxima-light": ["proxima-nova-light", "helvetica", "sans-serif"],
+                        "proxima-semibold": ["proxima-nova-semibold", "helvetica", "sans-serif"],
+                        "proxima-bold": ["proxima-nova-bold", "helvetica", "sans-serif"]
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+        <header>
+            <div class="w-full m-0 p-0 bg-black">
+                <div class="w-fullh-header px-20 md:px-24 midlg:px-32 xl:px-60 text-white flex flex-row justify-between items-center">
+
+                    <a href="">
+                       <img src="imgs/image 1.png" alt="Imagen principal"> 
+                    </a>
+                    <nav>
+                        <ul class="text-white font-proxima-light flex gap-20 list-none">
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">featued</a></li>
+                            <li><a href="#">portfolio</a></li>                            
+                            <li><a href="#">blog</a></li>
+                            <div>
+                                <ul class="flex space-x-4 gap-4">
+                                    <li><a href="#"><img class="w-6 h-auto" src="imgs/twitter-128.png" alt=""></a></li>
+                                    <li><a href="#"><img class="w-6 h-auto" src="imgs/linkedin-128.png" alt=""></a></li>
+                                    <li><a href="#"><img class="w-6 h-auto" src="imgs/facebook-128.png" alt=""></a></li>
+                                    <li><a href="#"><img class="w-6 h-auto" src="imgs/instagram-128.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+        </main>
+
+</body>
+
+</html>
